@@ -1,0 +1,126 @@
+
+
+// webpack
+================
+HTML
+ 
+	1. Diff between HTML and html5 What is <!Doctype> tag
+	 
+	2. Difference between tag and attribute
+	 
+	3. How about rendering another HTML page inside one html page?Is possible, If yes, how?
+	 
+	4. What is DOM and its structure?
+ 
+CSS:
+
+	difference between visibility hidden , display none
+	box model
+	difference between class, id, * selector
+ 
+What is box model
+ 
+	2. Difference between px, rem and em
+	 
+	3. Difference between class, id and selector(shown code and asked difference)
+	 
+	1. Javascript:
+	 
+	How to get elements from dom
+	 
+	2. What are strict mode and 5 areas where it applies strictly Es6 features
+	 
+	3. destructuring
+
+React JS
+ 
+	1. Create a component to show products in table format using table component by fetching from API.
+	 
+	2. Fetch and axios difference
+	 
+	3. What is virtual DOM and how it works
+	 
+	4. How is the folder structure in your current react app.
+	 
+	5. What is package.json and package-lock.json. Difference? Removing any of the will affect app?
+	 
+	6. Babel and webpack
+	 
+	7. Atomic rendering
+	 
+	8. Have you used Redux
+
+Javascript:
+ 
+	 
+	2. Find min and max number from array let array [5,9,7,9,4]
+	 
+		let sortedArray = array.sort((a,b)=>{
+			return a-b;
+		});
+	 
+		console.log(sortedArray); 
+		console.log(sortedArray[0]);
+		console.log(sortedArray[sortedArray.length - 1]);
+	 
+	3. Map function what will be output:
+		const array = [1,2,3];
+		array.map(function (el)(
+			return el*2;
+		});
+	 
+	4. What is async, await and promises
+	 
+	5. Remove repeated numbers/string from array and count how many times a element is repeated.
+	 
+	6. What will be output of below function:
+		let x=y=10;
+		function books(){ return x; }
+		x++;
+	 
+	7. What are different techniques for async data loading
+	 
+	8. What is callback function
+	 
+	9. What is es6
+	
+	10. addNum(1)(2)(3)(); -> 6 // inner function forms a closure for arguments
+	addNum(1)(2)(3)(4)(); -> 10
+	write function addNum to get above 
+	
+	11. pass by value , pass by reference
+ 
+React:
+ 
+	1. what is a template string?
+	2. What challenges do you face in functional components over class components?
+
+=============================
+
+====================
+memoization
+create custom hook, how to use useMemo hook
+debounce and usememo - can these be combined
+Deep Copy, Shallow Copy
+debounce, throttling-
+closure
+event loop
+Search input- debouncing/throttling
+event stack
+http method - headers
+http security - cross site
+web vitals
+async await , promise
+====
+Paytm
+Area -shrishail
+Oracle - Rohan
+eyota
+Amazon
+Capgemini
+EY
+KPMG
+=======
+
+
+
