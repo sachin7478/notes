@@ -1,5 +1,5 @@
 ## JS Interviwe Guess The output
-####To share code window [codeshare.io](https://codeshare.io/)
+#### To share code window [codeshare.io](https://codeshare.io/)
 ---
 
 **Question**
@@ -46,8 +46,8 @@ function sayHi() {
 console.log(typeof sayHi())
 console.log(typeof sayHi()())
 ```
->**op**
-`console.log(typeof sayHi())` // function
+>**op**  
+`console.log(typeof sayHi())` // function  
 `console.log(typeof sayHi()())` // number
 
 ---
@@ -148,7 +148,7 @@ let num = 10;
 var num = 20;
 console.log(num) 
 ```
-> **o/p:** - // SyntaxError: Identifier 'num' has already been declared
+> **o/p:** - // SyntaxError: Identifier 'num' has already been declared  
 if we do var num = 10 (1st line) => num = 20
 
 
@@ -187,10 +187,9 @@ sayHi();
   console.log(+"1" +  "1" + "2")
   console.log( "A" - "B" + "2")
   console.log( "A" - "B" + 2)
-  console.log(!'abc') // false
-  console.log(+true)  // true
+  console.log(!'abc') // false  
+  console.log(+true)  // true  
   const obj = {a:"1",a:"2"} console.log(obj)
-
 ```
   >**o/p:**
 > `console.log(1 +  "2" + "2");`   [str] => 122   
@@ -199,9 +198,9 @@ sayHi();
   `console.log(+"1" +  "1" + "2");` [str] => +'1'=> 1+'1'=> '11'+2=>'112'  
   `console.log( "A" - "B" + "2");` [str] => NaN2  
   `console.log( "A" - "B" + 2);`   [str] => NAN  
-  `console.log(!'abc')`   // false
-  `console.log(+true)`   // true 
-  `const obj = {a:"1",a:"2"} console.log(obj)` o/p=> { a: '2' } // same key
+  `console.log(!'abc')`   // false  
+  `console.log(+true)`   // true   
+  `const obj = {a:"1",a:"2"} console.log(obj)` **o/p** => { a: '2' } // same key
 
 ---
 
@@ -244,8 +243,9 @@ console.log(d, a);
 >**o/p:**  `{ size: 'Big' } { size: 'Big' }   `
 
 ---
-```
+
 **Qustion**
+```
 let x = 1; 
 if (function f() {}) { 
     x += typeof f; 
