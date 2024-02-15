@@ -315,6 +315,19 @@ console.log(sumTwo(arr, 9))
 
 ---
 
+###### Sort the array by name values
+```
+const books = [
+  { name: "Harry Potter", author: "Joanne Rowling" },
+  { name: "Warcross", author: "Marie Lu" },
+  { name: "The Hunger Games", author: "Suzanne Collins" }]
+  
+  let bRes = books.sort((a,b)=>{
+	  return a.name.localeCompare(b.name) // local compare is use to compare two strings
+  })
+console.log(bRes);
+```
+
 
 
 
