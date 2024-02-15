@@ -181,6 +181,26 @@ sayHi();
 
 **Question**
 ```
+function outer(){
+     var b = 2
+    function inner(){
+        b++;
+	console.log(b)
+        var b = 3;
+        console.log(b)
+    }
+    inner();
+}
+outer()
+```
+>**O/P**  
+>`NaN`  
+>`3`  
+> // Since `b` is `var`, it got hoisted as `undefined` in its local scope. 'undefined++' => NaN. If it has let/const would throw uncought reference error, cant access before initilization.  
+
+---
+**Question**
+```
   console.log(1 +  "2" + "2")
   console.log(1 +  +"2" + "2")
   console.log(1 +  -"1" + "2")
