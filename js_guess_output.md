@@ -303,9 +303,9 @@ try {
   console.log('finally', x)
 } 
 ```
->**o/p:** finaly block will always run after catch block 
-`10`
-`finally 10`
+>**o/p:** finaly block will always run after catch block   
+`10`  
+`finally 10`  
 ---
 
 
