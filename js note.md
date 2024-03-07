@@ -5,7 +5,7 @@
 
 
 #### Prototype and Prototype inheritence  
-```
+```javascript
 let obj = {name:'sachin'};
 obj.name = 'supriya';
 let person = {age:25, name:obj.name, getAge:function(){return this.age}} // shallow copy
@@ -18,7 +18,7 @@ console.log(person.getAge.call(person2));
 
 
 #### Call Bind Apply
-```
+```javascript
 let person = {
   name: 'sachin',
 }
@@ -34,7 +34,7 @@ console.log(sayHi.bind(person,21)()); // Name is sachin, Agi is 21
 ---
 
 #### Bind functionality  
-```
+```javascript
 const sachin = { 
                 name: "Sachin", 
                 sayName: function(){ console.log(this.name) }
@@ -47,14 +47,14 @@ setTimeout(sachin.sayName.bind(nikita), 3000) // w.r.t above line binding nikita
 
 
 #### Check if the val is integer or not  
-```
+```javascript
 let a = 12;
 const checkInteger = (val) => a % 1 === 0
 ```
 -------------
 #### DEEP COPY AND SHALLOW COPY  
 **Ref:** [https://youtu.be/mk7RpyHMUrU?si=1mSkhWwA4hJVazeP]  
-```
+```javascript
 let obj = {
   name: 'sachin',
   address: {
@@ -77,15 +77,21 @@ If there are nested object, it affects the source object i.e. its shallow copy.
 it fails to maintain saperete copy of user and object. 
 To bring deep copy i.e. nested object should not affect, we can use loadash externaly
 via cdn or npm package
-**syntax:** `let user = let user = _.cloneDeep(obj);`
+```javascript
+//Syntax
+let user = let user = _.cloneDeep(obj);
+```
 
 --------------
 #### DEBOUNCING  
 To reduce amount of time function calling. 
 Optimize function calling on change Event
 Hold function call for some-time.
-`<input type="text" onChange={myDebounce(doSomething,1000)} laceholder="Enter text here"/>`
+```html
+<input type="text" onChange={myDebounce(doSomething,1000)} laceholder="Enter text here"/>
 ```
+
+```javascript
   let counter = 0;
   const doSomething = (e) => {
     console.log("Fetchin data : ", counter++, e.target.value)
@@ -103,11 +109,13 @@ Hold function call for some-time.
 #### THROTTLING  
 Use case - On submiting the form, if user hit submit multiple times.
 then it should call only once
-`<button type="button" class="mt-4" onclick="tryThrottle()" id="app">
+```html
+<button type="button" class="mt-4" onclick="tryThrottle()" id="app">
             Multiple click Here
-          </button>`
+</button>
 ```
 
+```javascript
 let tcount = 0;
 let boolThrottle = true;
 function tryThrottle() {
@@ -163,7 +171,7 @@ TTFB is a metric that measures the time between the request for a resource and w
 ---
 
 #### CURRYING in Javascript  
-```
+```javascript
 const getSum = (a) => {
   return (b) => {
     return (c) => {
@@ -183,9 +191,10 @@ console.log(sum);
 
 
 #### Google map , redirect to location   
-```
+```html
 <a href={gmapsLinkGen(props.addressItem)}>  {`${address1} ${address2} ${city} </a>
-
+```
+```javascript
 const gmapsLinkGen = (officeObj: any) => {
 	return (
 		"https://maps.google.com/?q=" +
@@ -197,3 +206,11 @@ const gmapsLinkGen = (officeObj: any) => {
 	);
 };
 ```
+
+---
+
+
+#### What is Lazy loading in React ?  
+> infinite scrolling
+Reference : [Reference](https://www.linkedin.com/posts/saikrishnanangunuri_javascript-javascriptdeveloper-reactjs-activity-7170814145364258817-pTQv?utm_source=share&utm_medium=member_desktop)  
+---

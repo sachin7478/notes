@@ -3,7 +3,7 @@
 ---
 
 **Question**
-```
+```javascript
 let a=10;
 setTimeout(()=>{console.log(a)}, 1000);
 console.log("Hello")
@@ -15,7 +15,7 @@ Hello
 
 
 **Question**
-```
+```javascript
 for(var i=0; i<3; i++) {
    setTimeout(()=>{console.log(i)},100)
 }
@@ -27,7 +27,7 @@ for(var i=0; i<3; i++) {
 
 
 **Question**
-```
+```javascript
 var a = 10;
 function a() {
   console.log("20")
@@ -39,7 +39,7 @@ a();
 
 
 **Quenstion**
-```
+```javascript
 function sayHi() {
 	return () => 0;
 }
@@ -54,7 +54,7 @@ console.log(typeof sayHi()())
 
 
 **Question**
-```
+```javascript
 function foo() {
   let a = b = 0;
   a++;
@@ -71,7 +71,7 @@ typeof b; // => ???
 
 
 **Question**
-```
+```javascript
 (()=>{let x = y = 10})()
 (()=>{let x = y = 20})()
 console.log(y)
@@ -87,7 +87,7 @@ console.log(y)
 
 
 **Question**
-```
+```javascript
 function foo() {
   let a;
   window.b = 0;
@@ -106,7 +106,7 @@ typeof window.b;
 
 
 **Question**
-```
+```javascript
 // Array hole and flat property
 const arr = [1, 3, 5];
 arr[100] = 199;               // [1, 3, 5, empty × 97, 199]
@@ -116,7 +116,7 @@ console.log(arr.length);      // 101
 
 
 **Question**
-```
+```javascript
 function foo() {
 	'use strict'
 	age=20;
@@ -130,7 +130,7 @@ in strict mode varibale should have var, let , const
 
 
 **Question**
-```
+```javascript
 var a=10
 function test (){
         console.log(a)
@@ -143,7 +143,7 @@ test();
 
 
 **Question**
-```
+```javascript
 let num = 10;
 var num = 20;
 console.log(num) 
@@ -154,7 +154,7 @@ if we do var num = 10 (1st line) => num = 20
 
 ---
 **Question**
-```
+```html
 <div onlclick="console.log('div')">
   <p onlclick="console.log('p')">
     Click Here!
@@ -167,7 +167,7 @@ When we click on p tag, immediately call div due to event bubbling
 
 ---
 **Question**
-```
+```javascript
 function sayHi() {
  console.log(name);
  console.log(age);
@@ -180,7 +180,7 @@ sayHi();
 ---
 
 **Question**
-```
+```javascript
 function outer(){
      var b = 2
     function inner(){
@@ -200,7 +200,7 @@ outer()
 
 ---
 **Question**
-```
+```javascript
   console.log(1 +  "2" + "2")
   console.log(1 +  +"2" + "2")
   console.log(1 +  -"1" + "2")
@@ -226,7 +226,7 @@ outer()
 
 
 **Question**
-```
+```javascript
 console.log(1+2+"3"+4+5);
 console.log(1+2+"3"-4+5);
 console.log(1+2+"8"/4+5);
@@ -240,7 +240,7 @@ console.log(1+2+"3"*4+5);
 ---
 
 
-```
+```javascript
 let a = 3; // type number
 let b = new Number(3); // type object
 console.log(a == b); // true
@@ -253,7 +253,7 @@ console.log('10*10+5'); // '10*10+5'
 ---
 
 **Qustion**
-```
+```javascript
 let a = {size:"small"}
 let d;
 d = a;
@@ -265,7 +265,7 @@ console.log(d, a);
 ---
 
 **Qustion**
-```
+```javascript
 let x = 1; 
 if (function f() {}) { 
     x += typeof f; 
@@ -278,7 +278,7 @@ console.log(x);
 
 
 **Qustion**
-```
+```javascript
 let obj1 = { key: "value" };
 let obj2 = obj1;
 let obj3 = obj2;
@@ -290,4 +290,24 @@ console.log(obj1.key, obj2.key, obj3.key);
 ```
 >**o/p:** ` new value  |  another value  |   new value `
 ---
+
+
+**Qustion**
+```javascript
+try {
+  throw new error()
+} catch {
+  var x =10;
+  console.log(x)
+} finally{
+  console.log('finally', x)
+} 
+```
+>**o/p:** finaly block will always run after catch block 
+`10`
+`finally 10`
+---
+
+
+
 

@@ -1,7 +1,4 @@
 
-
-// webpack
-================
 HTML
  
 	1. Diff between HTML and html5 What is <!Doctype> tag
@@ -111,16 +108,12 @@ http method - headers
 http security - cross site
 web vitals
 async await , promise
+webpack
 ====
-Paytm
-Area -shrishail
-Oracle - Rohan
-eyota
-Amazon
-Capgemini
-EY
-KPMG
-=======
+
+Q : How to triggir onClick event of child component from parentComponent?
+Q : Difference between async await and promise
+Q : Write HOC
 
 
 
