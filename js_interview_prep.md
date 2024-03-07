@@ -29,8 +29,12 @@ febo(5);
 
 ###### Empty Array using splice
 ```javascript
-let arr = [1,2,5];
-console.log(arr.splice())
+// Delloitte
+const arrNumber = [1,2,5,6,7];
+let splicedArray = arrNumber.splice(0, arrNumber.length)
+
+console.log(arrNumber) // []
+console.log(splicedArray) // [1,2,5,6,7]
 ```
 ---
 ###### Reverse The string `Good Morning People`
@@ -48,11 +52,13 @@ console.log(reverseString(string,"")); //
 
 
 ---
-###### Print only values from the object  
+###### Print only values from the object 
+ 
 `user = { name: "Vishal", address: { primary: { house: "109", street: { main: "21", cross: "32" } } } }`;  
 **Output** => `Vishal  109 21 31`
 
 ```javascript
+// Persistent
 var user = { name: "Vishal", address: { primary: { house: "109", street: { main: "21", cross: "32" } } } };
 
 function printData(user) {
@@ -121,7 +127,6 @@ let newObj = {
 newObj.name                 // persistent
 obj.name = 'infosys'
 newObj.name                 // infosys
-// This is called deep copy
 ```
 ---
 
