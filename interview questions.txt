@@ -8,14 +8,15 @@ HTML
 	3. How about rendering another HTML page inside one html page?Is possible, If yes, how?
 	 
 	4. What is DOM and its structure?
+
+	media queries
+	
  
-CSS:
 
 	difference between visibility hidden , display none
 	box model
 	difference between class, id, * selector
  
-What is box model
  
 	2. Difference between px, rem and em
 	 
@@ -91,6 +92,8 @@ React:
  
 	1. what is a template string?
 	2. What challenges do you face in functional components over class components?
+	
+	what is styled componenets?
 
 =============================
 
@@ -98,6 +101,8 @@ React:
 memoization
 create custom hook, how to use useMemo hook
 debounce and usememo - can these be combined
+throttling,
+what is intrceptor
 Deep Copy, Shallow Copy
 debounce, throttling-
 closure
@@ -106,12 +111,16 @@ Search input- debouncing/throttling
 event stack
 http method - headers
 http security - cross site
-web vitals
+web vitals => lighthouse, tls, fid etc..all 6 matrices
 async await , promise
-webpack
+webpack,
+sonar, prettier, eslint
+submit form without JS
+html validation -=> required deyword
+form-data api in html
 ====
 
-Q : How to triggir onClick event of child component from parentComponent?
+Q : How to triggir onClick event of child component from parentComponent? => forwardref- wrap child element into forward ref. make use of useImperitive handle
 Q : Difference between async await and promise
 Q : Write HOC
 
