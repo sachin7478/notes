@@ -44,5 +44,5 @@ new line **text**
   - three and half
 
 
-![alt text](/cv_photo.jpg)
+![alt text](/assets/cv_photo.jpg)
 
