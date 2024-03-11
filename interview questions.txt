@@ -106,9 +106,8 @@ what is intrceptor
 Deep Copy, Shallow Copy
 debounce, throttling-
 closure
-event loop
+event loop / event stack => call stack, callback queue, webApi
 Search input- debouncing/throttling
-event stack
 http method - headers
 http security - cross site
 web vitals => lighthouse, tls, fid etc..all 6 matrices
@@ -118,6 +117,9 @@ sonar, prettier, eslint
 submit form without JS
 html validation -=> required deyword
 form-data api in html
+web workers? => Push notification, background synch
+useSelect, useDispatch, Redux
+write one jest unit test case
 ====
 
 Q : How to triggir onClick event of child component from parentComponent? => forwardref- wrap child element into forward ref. make use of useImperitive handle

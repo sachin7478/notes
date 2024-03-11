@@ -193,4 +193,72 @@ let loadOutput = (res) =>{
 ```
 
 ---
+### Question 3 - React - Coforge
+- Search text from city array, should be case Sensitive
+> Output ![Program](./assets/q3.png)
+```javascript
+import "./styles.css";
+import react, { useState } from "react";
+
+export default function App() {
+  const cities = ["Pune", "patna", "punjab", "jaipur", "delhi"];
+  let [res, setRes] = useState(cities);
+  let [searchText, setSearchText] = useState("");
+
+  const change = (e) => {
+    const val = e.target.value?.toLowerCase();
+    setSearchText(e.target.value);
+    if (val.length) {
+      const result =
+        cities.filter((item, i) => {
+          const newItem = item.toLowerCase();
+          return newItem.indexOf(val) === 0;
+        }) || [];
+      setRes(result);
+    } else {
+      setRes(cities);
+    }
+  };
+
+  return (
+    <div className="App">
+      <h1>Hello CodeSandbox</h1>
+      <input type="text" onChange={change} value={searchText} />
+      <ul>
+        {res.length &&
+          res.map((item, index) => {
+            return <li key={index}>{item}</li>;
+          })}
+      </ul>
+    </div>
+  );
+}
+```  
+
+---
+
+### Q4 - Memoize with addition - Coforge
+```javascript
+const memoize = (fn) => {
+  let cache = {};
+  return (...args) => {
+    const strArgs = JSON.stringify(args);
+    if(cache[strArgs]) {
+      console.log('from cache')
+      return cache[strArgs]
+    } else {
+      const temp = fn(...args);
+      cache[strArgs] = temp;
+      return cache[strArgs]
+    }
+  }
+}
+let add2 = (a,b,c) => a + b + c;
+const sum = memoize(add2);
+console.log(sum(1,2,3))  // 6
+console.log(sum(1,2,3))  // from cache , 6
+```
+---
+
+
 
