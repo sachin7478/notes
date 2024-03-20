@@ -214,3 +214,21 @@ const gmapsLinkGen = (officeObj: any) => {
 > infinite scrolling
 Reference : [Reference](https://www.linkedin.com/posts/saikrishnanangunuri_javascript-javascriptdeveloper-reactjs-activity-7170814145364258817-pTQv?utm_source=share&utm_medium=member_desktop)  
 ---
+
+
+- "argument" object of js function [not works on arrow function]
+
+---
+
+- What is web api => fetch, setTimeout, ajax, api calls, setInterval, storage,dom
+- Event loop : [Reference Video](https://www.youtube.com/watch?v=fuTWE0Mupzk )
+     - execution stack / Call Stack - Runs the code line by line, once any async found, moved to webApi
+	   - web api's = Runs the event in isolated/seperate environment that are callback, settimeouts, storage, ajax, fetch
+					 - After time completion the event moved to event queue
+	   - event queue => moves the event to execution stack that are being moved from webApi's
+
+
+---
+- Css proprocessors
+- CSS Object Model
+---

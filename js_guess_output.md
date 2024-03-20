@@ -308,6 +308,14 @@ try {
 `finally 10`  
 ---
 
+**Qustion**
+```javascript
+let str = 'sachin'
+str[0] = 'x'; // it will create new object
+console.log(str[0]) // s  : strings are immutable objects
+```
+---
+
 
 
 
